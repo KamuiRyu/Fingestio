@@ -223,9 +223,8 @@ label {
 }
 
 .form-check-input {
-    color: #080404;
     accent-color: currentColor;
-    background-color: #161616;
+    background-color: #080404;
     border-color: #333;
 }
 

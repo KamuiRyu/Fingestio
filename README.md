@@ -1,6 +1,6 @@
 # Fingestio - Tela de Login
 
-![Preview](img/login.svg)
+![Preview](img/logo.svg)
 
 ## Descrição
 

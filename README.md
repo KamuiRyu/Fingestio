@@ -24,7 +24,7 @@ Este projeto apresenta uma tela de login responsiva e moderna para o sistema **F
 
 2. **Abra o arquivo**
 
-   - Abra `login.html` no seu navegador para visualizar a tela de login.
+   - Abra `index.html` no seu navegador para visualizar a tela de login.
 
 
 ## Estrutura dos arquivos

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #080404;
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    background: #080404;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+    background: #080404;
+    border-radius: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 0;
+}
+
+.logo-box {
+    background: #FFD600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    height: 120px;
+}
+
+.logo-box img {
+    width: auto;
+    height: 90px;
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 1.5rem;
+}
+
+.form-control {
+    background-color: #080404;
+    border-color: #333;
+    padding: 0.75rem 1rem;
+    color: #d5d5d5;
+}
+
+.form-control::placeholder {
+    color: #474747;
+}
+
+.form-control:focus {
+    color: #d5d5d5;
+    background-color: #080404;
+    border-color: #FFD600;
+    border-width: 0.3px;
+    outline: none;
+    box-shadow:
+        0 0 0 0.5px #FFD600,
+        0 0 8px 2px rgba(255, 214, 0, 0.28),
+        0 1px 6px 0 rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    background-clip: padding-box;
+}
+
+.btn-custom-yellow {
+    background: linear-gradient(90deg, #FFD600, #FFB800);
+    color: #111;
+    border: none;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 12px 0 rgba(255, 214, 0, 0.16);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.btn-custom-yellow:hover, .btn-custom-yellow:focus {
+    background: linear-gradient(90deg, #FFF700, #FF9800);
+    box-shadow: 0 4px 24px 0 rgba(255, 214, 0, 0.36);
+    transform: translateY(-2px) scale(1.03);
+    color: #111;
+}
+
+.btn-custom-yellow::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.0) 60%);
+    transform: skewX(-20deg) translateX(-100%);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.btn-custom-yellow:hover::after, .btn-custom-yellow:focus::after {
+    transform: skewX(-20deg) translateX(0%);
+}
+
+.btn-custom-yellow:active, 
+.btn-custom-yellow.active, 
+.show > .btn-custom-yellow.dropdown-toggle {
+    background: linear-gradient(90deg, #e6c200, #dba800) !important;
+    color: #111 !important;
+    box-shadow: 0 1px 4px 0 rgba(255, 214, 0, 0.10);
+}
+
+.divider {
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    position: relative;
+}
+
+.divider span {
+    background: #080404;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.divider:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: #333;
+    z-index: 1;
+}
+
+.btn-social {
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+    background: #080404;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        background 0.25s,
+        box-shadow 0.25s,
+        transform 0.18s;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-social:hover, .btn-social:focus {
+    background: #1a1010;
+    color: #FFD600;
+    box-shadow: 0 8px 28px 0 rgba(255, 214, 0, 0.10), 0 4px 16px 0 rgba(0,0,0,0.16);
+    transform: translateY(-2px) scale(1.02);
+    border-color: #FFD600;
+}
+
+.btn-social:active {
+    background: #2b1a0a;
+    color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(255, 214, 0, 0.08), 0 2px 8px 0 rgba(0,0,0,0.14);
+    transform: translateY(0) scale(0.99);
+}
+
+.btn-social::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 140%;
+    height: 220%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 40%, rgba(255,255,255,0) 70%);
+    transform: skewX(-20deg) translateX(-120%);
+    transition: transform 0.7s cubic-bezier(.17,.67,.83,.67);
+    pointer-events: none;
+}
+.btn-social:hover::after, .btn-social:focus::after {
+    transform: skewX(-20deg) translateX(0%);
+}
+
+.forgot-link,
+.create-link {
+    color: #FFD600;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover,
+.create-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+.form-check-label {
+    color: #fff;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+}
+
+.form-check-input {
+    color: #080404;
+    accent-color: currentColor;
+    background-color: #161616;
+    border-color: #333;
+}
+
+.form-check-input:checked {
+    background-color: #FFD600;
+    border-color: #FFD600;
+    color: #080404;
+}
+
+@media (min-width: 992px) {
+    .container-login {
+        max-width: 480px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-login {
+        max-width: 100vw;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    .logo-box {
+        height: 100px;
+    }
+    .logo-box img {
+        height: 90px;
+    }
+    .divider span {
+        padding: 0 0.4rem;
+    }
+    form {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .container-login {
+        padding: 0 0.1rem;
+    }
+    .divider span {
+        padding: 0 0.1rem;
+    }
+}
